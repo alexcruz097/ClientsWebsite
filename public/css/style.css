@@ -1,0 +1,96 @@
+/* nav bar styles------------ */
+nav {
+	display: flex;
+	border-bottom: 1px solid black;
+	justify-content: space-around;
+}
+#nav-logo {
+	width: 4rem;
+	border-radius: 50%;
+}
+#nav-links {
+	display: flex;
+	width: 50%;
+	justify-content: space-evenly;
+}
+#nav-links li {
+	text-transform: uppercase;
+	list-style: none;
+	cursor: pointer;
+}
+/* *************Home section STyles ******************** */
+#home-section {
+	max-height: calc(100vh - 64px);
+	max-width: 85vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#slogan {
+	font-size: 2rem;
+	text-align: center;
+}
+#contact-btn {
+	background-color: red;
+	font-size: 1rem;
+}
+#truck-img {
+	width: 100%;
+	height: fit-content;
+}
+
+/* *************Card section STyles ******************** */
+#contact-section,
+#home-section,
+#cards-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	border-top: 1px solid black;
+}
+#cards {
+	display: flex;
+
+	flex-direction: column;
+}
+.card {
+	text-align: center;
+	width: 90%;
+}
+/* *************carasaul section STyles ******************** */
+#carousel-section{
+border: 1px solid black;
+text-align: center;
+padding: 2rem 0rem;
+width: 90%;
+margin: auto;
+
+}
+#reviewers-img{
+	width: 20%;
+	height: 5rem;
+	border-radius: 50%;
+
+}
+
+/* *************Contact section Styles ******************** */
+#contact-info {
+	text-align: center;
+}
+form {
+	border: 1px solid black;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	max-width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+/* *************Footer section Styles ******************** */
+#footer-section {
+	text-align: center;
+	padding: 0.4rem 0rem;
+	border-top: 1px solid black;
+}

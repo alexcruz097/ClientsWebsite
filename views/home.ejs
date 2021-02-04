@@ -1,0 +1,73 @@
+<%- include('partials/header.ejs') %>
+    <section id="home-section">
+        <div>
+            <p id="slogan">We Do The Dirty Work, So You Don't Have To, There's No Better Way.</p>
+            <button id="contact-btn">Contact</button>
+        </div>
+        <img id="truck-img" src="https://www.alfredotowingservices.com/wp-content/uploads/2017/05/help1-775x517.jpg"
+            alt="out truck images">
+
+    </section>
+    <!-- Card Section -->
+    <section id="cards-section">
+        <div class="time-card card">
+            <i class="far fa-clock fa-3x"></i>
+            <h1>TIME</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis doloribus libero eaque quia non,
+                reiciendis nisi expedita minus eius illum!</p>
+        </div>
+        <div class="pro-card card">
+            <i class="far fa-check-circle fa-3x"></i>
+            <h1>PRO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequuntur voluptatum neque voluptatem,
+                tenetur minus architecto nemo aspernatur tempora est.
+            </p>
+        </div>
+        <div class="experienced-card card">
+            <i class="fas fa-hard-hat fa-3x"></i>
+            <h1>EXPERIENCED</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum sed itaque ipsum voluptatem
+                veritatis repellat sint distinctio ipsa dicta!</p>
+        </div>
+    </section>
+    <section id="carousel-section">
+        <% function clicked(){ %>
+            <% console.log("hello world") %> 
+            <% } %> 
+            <button onClick = "clicked()"  >Hello</button>
+        <h3>What our customers are saying</h3>
+        <div class="my-slider">
+            <img id="reviewers-img" src=<%=reviews[reviewCounter].img %> alt="customer-picture">
+            <p id="reviewers-comment">
+                <%= reviews[reviewCounter].img %>
+            </p>
+            <p id="reviewers-name">
+                <%= reviews[reviewCounter].name %>
+            </p>
+            <button id="prev-btn" onClick= <%= prevImg() %>>bakc</button>
+            <button id="next-btn" onClick=nextImg()>></button>
+        </div>
+        <!-- or ul.my-slider > li -->
+
+        </div>
+    </section>
+    <section id="contact-section">
+        <div id="contact-info">
+            <h3>Need to get in touch?</h3>
+            <p>Need a quote or have a question? Please feel free to contact us and we will get right back as soon as
+                possible.</p>
+            <p><i class="fas fa-mobile-alt"></i> 747-255-1090</p>
+            <p><i class="fas fa-at"></i> alex@ggmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Los Angeles,CA</p>
+        </div>
+        <form action="/">
+            <h1>Contact Us</h1>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Question"></textarea>
+
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
